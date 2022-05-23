@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="test/css" href="style.css">
+        <script type="text/javascript">
+        </script>
+        <style>
+            .body_background {
+   background-image: url("bgl.jpg");
+   background-position: center;
+   background-size: cover; 
+}
+body{
+    cursor: pointer;
+}
+h1
+{
+    color: red;
+    font-size: 40px;
+}
+#myCanvas{
+    border-width:10px;
+    background-color: white;
+    border-style: ridge;
+}
+button {
+    background-color: #4CAF50;
+    border: none;
+    color:white;
+    padding: 10px 42px;
+    font-size: 10px;
+}
+
+input
+{
+    margin-right: 20px;
+}
+        </style>
+    </head>
+    <body class="body_background" style="text-align: center">
+        <h1>Paint</h1>
+        <canvas id="myCanvas" width="500" height="350"></canvas>
+        <br><br>
+        <span>Radius - </span><input type="text" id="radius" value="20">
+        <span>Color - </span><input type="text" id="color" value="Red">
+        <span>Width of the line - </span><input type="text" id="width_of_line" value="2">
+        <br>
+        <br>
+        <button onclick="clear_area();">Clear Area</button>
+        <script src="main.js"></script>
+    </body>
+</html>
